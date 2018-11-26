@@ -3,9 +3,10 @@
 # author: zengyuetian
 # 板块信息相关函数
 
-from lib.city.district import *
+from lib.zone.district import *
 from lib.const.xpath import *
-from lib.const.request_headers import *
+from lib.request.headers import *
+from lib.spider.base_spider import SPIDER_NAME
 
 
 def get_district_url(city, district):
@@ -15,7 +16,7 @@ def get_district_url(city, district):
     :param district: 区县
     :return:
     """
-    return "http://{0}.lianjia.com/xiaoqu/{1}".format(city, district)
+    return "http://{0}.{1}.com/xiaoqu/{2}".format(city, SPIDER_NAME, district)
 
 
 def get_areas(city, district):

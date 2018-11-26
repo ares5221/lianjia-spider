@@ -6,3 +6,8 @@ lxml
 records
 pymongo
 xlsxwriter
+numpy
+pandas
+pyecharts
+pyecharts-snapshot
+webbrowser
